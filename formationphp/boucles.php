@@ -16,3 +16,4 @@ while($j < 3){
 foreach($projets as $projet){
     echo $projet . "<br>";
 }
+?>
