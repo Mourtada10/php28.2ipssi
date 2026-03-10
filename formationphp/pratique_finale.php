@@ -22,4 +22,5 @@ for($i = 0; $i < 3; $i++){
 
 foreach($membres as $membre){
     verifierAcces($membre, $codeSecret);
+     echo "_-_-_-_-_-_<br>";
 }
