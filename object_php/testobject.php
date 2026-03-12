@@ -12,28 +12,28 @@ class Personnage{
     }
 
     public function afficherInfos(){
-        echo $this->nom . "a" .  $this->vie . "PV et" . $this->force . "d'attaque";
+        echo $this->nom  . " a " .  $this->vie . " PV et " . $this->force . " d'attaque " . "<br>";
     }
 
     public function attaquer($cible){
         $cible->vie = $this->vie - $this->force;
-        echo $this->nom . "attaque" . $cible . "et lui retire" .  $this->force . "PV";
+        echo $this->nom . " attaque " . $cible->nom . " et lui retire " .  $this->force . " PV " . "<br>";
     }
 }
 
 $guerrier = new Personnage("Maximus", 20);
 $monstre = new Personnage("Shadow", 15);
 
-$guerrier->afficherInfos();
-$monstre->afficherInfos();
+$guerrier->afficherInfos() . "<br>";
+$monstre->afficherInfos() . "<br>";
 
 $guerrier->attaquer($monstre);
 
-$monstre->afficherInfos();
+$monstre->afficherInfos() . "<br>";
 
 $monstre->attaquer($guerrier);
 
-$guerrier->afficherInfos();
+$guerrier->afficherInfos() . "<br>";
 
 
 
