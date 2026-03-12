@@ -12,7 +12,7 @@ class Personnage{
     }
 
     public function afficherInfos(){
-        echo $this->nom  . " a " .  $this->vie . " PV et " . $this->force . " d'attaque " . "<br>";
+        echo $this->nom  . " a " .  $this->vie . " PV et " . $this->force . " force d'attaque " . "<br>";
     }
 
     public function attaquer($cible){
